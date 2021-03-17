@@ -26,3 +26,8 @@ csv.each do |row|
 end
 
 puts "There are now #{Megalith.count} rows in the megaliths table"
+
+megaliths = Megalith.all
+megaliths.each do |megalith|
+  megalith.photo.attach(io:File.open('db/fixtures/megaliths/#{megalith.City}/#{megalith.Name}/#{megalith.Name}_1.jpg'), filename: '#{megalith.Name}_1.jpg', content_type: 'image/jpg')
+end

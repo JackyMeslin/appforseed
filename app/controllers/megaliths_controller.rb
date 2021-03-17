@@ -64,6 +64,6 @@ class MegalithsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def megalith_params
-      params.require(:megalith).permit(:Name, :City, :Address, :Category, :Description, :Latitude, :Longitude)
+      params.require(:megalith).permit(:Name, :City, :Address, :Category, :Description, :Latitude, :Longitude, :image)
     end
 end

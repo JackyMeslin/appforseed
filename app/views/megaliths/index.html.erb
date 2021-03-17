@@ -26,6 +26,7 @@
         <td><%= megalith.Description %></td>
         <td><%= megalith.Latitude %></td>
         <td><%= megalith.Longitude %></td>
+        <td><%= image_tag megalith.image, style: "width: 30px" %></td>
         <td><%= link_to 'Show', megalith %></td>
         <td><%= link_to 'Edit', edit_megalith_path(megalith) %></td>
         <td><%= link_to 'Destroy', megalith, method: :delete, data: { confirm: 'Are you sure?' } %></td>

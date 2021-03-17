@@ -35,5 +35,11 @@
   <%= @megalith.Longitude %>
 </p>
 
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @megalith.image.variant(resize: "200X200") %>
+</p>
+
+
 <%= link_to 'Edit', edit_megalith_path(@megalith) %> |
 <%= link_to 'Back', megaliths_path %>
