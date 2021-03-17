@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Megaliths</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>City</th>
+      <th>Address</th>
+      <th>Category</th>
+      <th>Description</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @megaliths.each do |megalith| %>
+      <tr>
+        <td><%= megalith.Name %></td>
+        <td><%= megalith.City %></td>
+        <td><%= megalith.Address %></td>
+        <td><%= megalith.Category %></td>
+        <td><%= megalith.Description %></td>
+        <td><%= megalith.Latitude %></td>
+        <td><%= megalith.Longitude %></td>
+        <td><%= link_to 'Show', megalith %></td>
+        <td><%= link_to 'Edit', edit_megalith_path(megalith) %></td>
+        <td><%= link_to 'Destroy', megalith, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Megalith', new_megalith_path %>

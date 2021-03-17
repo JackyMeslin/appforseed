@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @megalith.Name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @megalith.City %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @megalith.Address %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @megalith.Category %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @megalith.Description %>
+</p>
+
+<p>
+  <strong>Latitude:</strong>
+  <%= @megalith.Latitude %>
+</p>
+
+<p>
+  <strong>Longitude:</strong>
+  <%= @megalith.Longitude %>
+</p>
+
+<%= link_to 'Edit', edit_megalith_path(@megalith) %> |
+<%= link_to 'Back', megaliths_path %>
